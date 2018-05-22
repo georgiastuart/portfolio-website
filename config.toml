@@ -1,0 +1,8 @@
+baseURL = "http://georgiastuart.com"
+languageCode = "en-us"
+title = "Georgia Stuart"
+
+
+[[menu.navbar_ext]]
+name = "Tim"
+absurl = "tullrich.com"
