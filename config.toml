@@ -2,7 +2,20 @@ baseURL = "http://georgiastuart.com"
 languageCode = "en-us"
 title = "Georgia Stuart"
 
+#staticDir = ["static"]
 
-[[menu.navbar_ext]]
+[[menu.navbar]]
+name = "About"
+url = "about"
+
+[[menu.navbar]]
+name = "Blog"
+url = "blog"
+
+[[menu.navbar]]
+name = "Teaching"
+url = "teaching"
+
+[[menu.navbar]]
 name = "Tim"
-absurl = "tullrich.com"
+url = "https://tullrich.com"
