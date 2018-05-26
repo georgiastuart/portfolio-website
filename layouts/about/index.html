@@ -1,3 +1,62 @@
 {{ define "main" }}
-Test
+<h1>Georgia Stuart</h1>
+
+<div class="row flex-md-center">
+    <div class="col-md-3">
+
+        <div class="row">
+            <div class="container"><img src="/about/georgia.png" class="img-fluid radius-lg" alt="Georgia Stuart"></div>
+        </div>
+    </div>
+
+    <div class="col-md-9 col-xl-6">
+        <div data-cfw="scrollspy" data-cfw-scrollspy-target="#toc" data-cfw-scrollspy-offset="0">
+            <h3 id="about">About</h3>
+
+            <h3 id="education">Education</h3>
+            {{ range $.Site.Data.about.cv.education }}
+            <div class="row cv-row">
+                <div class="col-md-2"><span class="cv-date"> {{ .date }}</span></div>
+                <div class="col-md-10">
+                    <span class="cv-degree">{{ .degree }}</span><br>
+                    <span class="cv-institution">{{ .institution }}</span>, {{ .location }} <br>
+                    <span class="cv-notes">{{ .notes }}</span>
+                </div>
+            </div>
+            {{ end }}
+            <h3 id="research">Research Experience</h3>
+            {{ range $.Site.Data.about.cv.research }}
+            <div class="row cv-row">
+                <div class="col-md-2"><span class="cv-date"> {{ .date }}</span></div>
+                <div class="col-md-10">
+                    <span class="cv-degree">{{ .title }}</span><br>
+                    <span class="cv-institution">{{ .institution }}</span>, {{ .location }} <br>
+                    {{ if .notes }}<span class="cv-notes">{{ .notes }}</span><br>{{ end }}
+                    <span class="cv-notes"><span style="font-weight: bold">Topic:</span> {{ .topic }}</span>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="col-xl-3">
+        <div id="toc-container"  class="container">
+            <nav id="toc" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#about">About</a>
+                <a class="list-group-item list-group-item-action" href="#education">Education</a>
+                <a class="list-group-item list-group-item-action" href="#research">Research Experience</a>
+            </nav>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+
+    $(document).ready(function () {
+        $('#toc-container').CFW_Affix({
+            top: 120
+        })
+    })
+</script>
 {{ end }}

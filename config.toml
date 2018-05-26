@@ -19,3 +19,7 @@ url = "teaching"
 [[menu.navbar]]
 name = "Tim"
 url = "https://tullrich.com"
+
+[[menu.navbar]]
+name = "UTD"
+url = "http://utdallas.edu"

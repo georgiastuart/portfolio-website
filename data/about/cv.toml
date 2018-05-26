@@ -1,0 +1,48 @@
+[[education]]
+date = "Dec 2019"
+degree = "Doctor of Philosophy in Applied Mathematics"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+notes = "Concentration in numerical methods for stochastic seismic inversion. Advisors: Dr. Susan Minkoff and Dr. Felipe Pereira"
+
+[[education]]
+date = "Dec 2014"
+degree = "Masters of Arts in Teaching in Mathematics Education"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+
+[[education]]
+date = "Dec 2014"
+degree = "Masters of Arts in Teaching in Science Education"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+notes = "Concentration in physics education."
+
+[[education]]
+date = "May 2012"
+degree = "Bachelors of Science in Mathematical Sciences"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+notes = "Concentration in pure mathematics."
+
+[[research]]
+date = "Aug 2016 - Present"
+title = "Research Student"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+topic = "Markov chain Monte Carlo inversion for the wavespeed problem using the upscaled acoustic wave equation as a filter. Investigating layer perturbation methods."
+
+[[research]]
+date = "Jan 2015 - May 2016"
+title = "Research Assistant"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+notes = "Part of the NSF Enriched Doctoral Training Program. Worked on a team project with faculty members and a statistics student as well as an external partner, Pioneer Natural Resources."
+topic = "Markov chain Monte Carlo inversion for the wavespeed problem using the upscaled acoustic wave equation as a filter."
+
+[[research]]
+date = "June 2016 - Aug 2014"
+title = "Research Student"
+institution = "The University of Texas at Dallas"
+location = "Richardson, TX"
+topic = "Use of resolution matrices for inversion of seismic velocity."
