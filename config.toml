@@ -2,6 +2,11 @@ baseURL = "http://georgiastuart.com"
 languageCode = "en-us"
 title = "Georgia Stuart"
 
+[params]
+    email = "georgia.stuart@gmail.com"
+    github = "georgiastuart"
+    linkedin = "georgiastuart"
+    website = "georgiastuart.com"
 #staticDir = ["static"]
 
 [[menu.navbar]]

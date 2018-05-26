@@ -20,11 +20,21 @@
 }
 
 .cv-date {
+    text-align: right;
 }
 
-#toc-container.affix {
-    position: fixed;
-    top: 0;
+.cv-list {
+    font-size: small;
+    font-style: italic;
 }
 
-#toc
+.cv-header {
+    border-bottom: 0.2rem dotted darkorange;
+    /*border-top: 0.2rem solid darkorange;*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cv-icon {
+    text-align: right;
+}

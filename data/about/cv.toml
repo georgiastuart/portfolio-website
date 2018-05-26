@@ -1,18 +1,18 @@
 [[education]]
-date = "Dec 2019"
+date = "December 2019"
 degree = "Doctor of Philosophy in Applied Mathematics"
 institution = "The University of Texas at Dallas"
 location = "Richardson, TX"
 notes = "Concentration in numerical methods for stochastic seismic inversion. Advisors: Dr. Susan Minkoff and Dr. Felipe Pereira"
 
 [[education]]
-date = "Dec 2014"
+date = "December 2014"
 degree = "Masters of Arts in Teaching in Mathematics Education"
 institution = "The University of Texas at Dallas"
 location = "Richardson, TX"
 
 [[education]]
-date = "Dec 2014"
+date = "December 2014"
 degree = "Masters of Arts in Teaching in Science Education"
 institution = "The University of Texas at Dallas"
 location = "Richardson, TX"
@@ -33,7 +33,7 @@ location = "Richardson, TX"
 topic = "Markov chain Monte Carlo inversion for the wavespeed problem using the upscaled acoustic wave equation as a filter. Investigating layer perturbation methods."
 
 [[research]]
-date = "Jan 2015 - May 2016"
+date = "Aug 2015 - May 2016"
 title = "Research Assistant"
 institution = "The University of Texas at Dallas"
 location = "Richardson, TX"
@@ -41,8 +41,87 @@ notes = "Part of the NSF Enriched Doctoral Training Program. Worked on a team pr
 topic = "Markov chain Monte Carlo inversion for the wavespeed problem using the upscaled acoustic wave equation as a filter."
 
 [[research]]
-date = "June 2016 - Aug 2014"
+date = "June 2014 - Aug 2014"
 title = "Research Student"
 institution = "The University of Texas at Dallas"
 location = "Richardson, TX"
 topic = "Use of resolution matrices for inversion of seismic velocity."
+
+[[teaching]]
+date = "June 2016 - Present"
+title = "Lecturer I"
+institution = "The University of Texas at Dallas, Science and Mathematics Education Department"
+location = "Richardson, TX"
+notes = "Design and teach courses for the Masters of Arts in Teaching program at UT Dallas and Consult with students working on theses on statistics."
+courses = ["Computer Science for Teachers I, II, and Application Topics",
+"Statistics for Educational Research",
+"Non-Euclidean Geometry for Teachers, Problems in Geometry",
+"Problems in Math Modeling", "Problems in Discrete Mathematics",
+"Problems in Probability and Statistics"]
+
+[[teaching]]
+date = "Feb 2017 - Present"
+title = "Co-Director"
+institution = "UT Dallas WeTeach_CS Collaborative"
+location = "Richardson, TX"
+notes = "UT Dallas WeTeach_CS is a program designed to prepare teachers to take the TExES 241 Computer Science certification exam."
+
+[[teaching]]
+date = "Oct 2015 - Present"
+title = "Instructional Team Member"
+institution = "UT Dallas Collaborative for Excellence in Mathematics Teaching"
+location = "Richardson, TX"
+notes = "Plan and write curriculum for computer science for mathematics and science teachers workshops and serve as a content expert for mathematics and computer science."
+
+[[teaching]]
+date = "Jan 2015 - Aug 2015"
+title = "Teaching Associate"
+institution = "The University of Texas at Dallas, Science and Mathematics Education Department"
+location = "Richardson, TX"
+notes = "Designed and taught courses for the Masters of Arts in Teaching program at UT Dallas, including Statistics for Educational Research and Higher Geometry for Teachers."
+
+[[teaching]]
+date = "Jan 2011 - Aug 2015"
+title = "Director"
+institution = "Women in Physics Camp for Girls at the University of Texas at Dallas"
+location = "Richardson, TX"
+notes = "Coordinated and planned an annual physics camp for girls at UT Dallas, researched and designed physics curriculum, and taught and encouraged a love of physics to middle school girls."
+
+[[teaching]]
+date = "June 2012 - Dec 2014"
+title = "Teaching Assistant"
+institution = "The University of Texas at Dallas, Science and Mathematics Education Department"
+location = "Richardson, TX"
+notes = "Assisted with the instruction of undergraduate teaching courses including Knowing and Learning and Research Methods. Assisted with the instruction of masters of arts in teaching courses including Statistics for Educational Research."
+
+[[teaching]]
+date = "Aug 2014 - Dec 2014"
+title = "Apprentice Teacher"
+institution = "Plano West Senior High School through UTeach Dallas"
+location = "Richardson, TX"
+notes = "Taught AP Statistics for four periods per day. Created statistics lessons with real-life connections. Created evaluations for the AP Statistics teaching team."
+
+[[grants]]
+date = "January 2018"
+title = "WeTeach_CS Collaborative Funding"
+institution = "WeTeach_CS at UT Austin’s Center for STEM Education"
+amount = "$180,000"
+
+[[grants]]
+date = "January 2017"
+title = "WeTeach_CS Collaborative Funding"
+institution = "WeTeach_CS at UT Austin’s Center for STEM Education"
+amount = "$130,000"
+
+[[grants]]
+date = "December 2016"
+title = "Support for a Course to Certify Teachers in Computer Science"
+institution = "Texas Instruments"
+amount = "$25,000"
+
+[[publications]]
+authors = "G.K. Stuart, W. Yang, S.E. Minkoff, F. Pereira"
+title = "A two-stage Markov chain Monte Carlo method for velocity estimation and uncertainty quantification"
+journal = "SEG Technical Program Expanded Abstracts 2016"
+date = "September 2016"
+pages = "3682-3687"

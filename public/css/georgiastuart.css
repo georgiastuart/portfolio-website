@@ -1,0 +1,30 @@
+.navbar {
+    margin-bottom: 1em;
+}
+
+.cv-row {
+    margin-bottom: 1rem;
+}
+
+.cv-degree {
+    font-weight: bold;
+}
+
+.cv-institution {
+    font-style: italic;
+}
+
+.cv-notes {
+    font-style: italic;
+    font-size: small;
+}
+
+.cv-date {
+}
+
+#toc-container.affix {
+    position: fixed;
+    top: 0;
+}
+
+#toc
