@@ -85,9 +85,21 @@
 <div class="row cv-row">
     <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
     <div class="col-md-9">
-        {{ .authors }}
+        {{ .authors }}, {{ .date }}, <span class="cv-title">{{ .title }},</span> <span class="cv-journal">{{ .journal }}</span>:
+        pp. {{ .pages }}{{ if .inrevision }}, in revision {{ .date }}{{ end }}
         <!--<span class="cv-degree">{{ .title }}</span><br>-->
         <!--<span class="cv-institution">{{ .institution }}</span>, {{ .amount }}<br>-->
+    </div>
+</div>
+{{ end }}
+
+<h3 id="presentations">Presentations</h3>
+{{ range $.Site.Data.about.cv.presentations }}
+<div class="row cv-row">
+    <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
+    <div class="col-md-9">
+        {{ .authors }}, <span class="cv-presentation-title">"{{ .title }},"</span>
+        <span class="cv-meeting">{{ .meeting }}</span>{{ if .isposter }} [poster]{{ end }}
     </div>
 </div>
 {{ end }}

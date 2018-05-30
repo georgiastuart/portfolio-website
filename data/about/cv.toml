@@ -120,8 +120,87 @@ institution = "Texas Instruments"
 amount = "$25,000"
 
 [[publications]]
-authors = "G.K. Stuart, W. Yang, S.E. Minkoff, F. Pereira"
+authors = "Stuart, G.K., S.E. Minkoff, F. Pereira"
+title = "A two-stage Markov chain Monte Carlo method for seismic inversion"
+journal = "Geophysics"
+date = "2018"
+pages = "1-34"
+inrevision = true
+
+[[publications]]
+authors = "Stuart, G.K., W. Yang, S.E. Minkoff, F. Pereira"
 title = "A two-stage Markov chain Monte Carlo method for velocity estimation and uncertainty quantification"
 journal = "SEG Technical Program Expanded Abstracts 2016"
-date = "September 2016"
+date = "2016"
 pages = "3682-3687"
+
+[[presentations]]
+authors = "Stuart, G.K., S.E. Minkoff, F. Pereira"
+title = "Seismic Velocity Inversion using Two-stage Markov Chain Monte Carlo and Operator Upscaling for the Acoustic Wave Equation"
+date = "July 2018"
+meeting = "SIAM Annual Meeting 2018"
+location = "Portland, OR"
+
+[[presentations]]
+authors = "Stuart, G.K., W. Yang, S.E. Minkoff, F. Pereira"
+title = "A two-stage Markov chain Monte Carlo method for velocity estimation and uncertainty quantification"
+date = "Oct 2016"
+meeting = "SEG Annual Meeting 2016"
+location = "Dallas, TX"
+
+[[presentations]]
+authors = "Stuart, G.K., W. Yang, S.E. Minkoff, F. Pereira"
+title = "Velocity Estimation Using Multi-Level Monte Carlo Bayesian Inversion"
+date = "July 2016"
+meeting = "SIAM Annual Meeting 2016"
+location = "Boston, MA"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "Exploring Middle School Probability"
+date = "June 2015"
+meeting = "Texas Regional Collaboratives 21st Annual Meeting"
+location = "Austin, TX"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "Exploring Middle School Statistics"
+date = "June 2015"
+meeting = "Texas Regional Collaboratives 21st Annual Meeting"
+location = "Austin, TX"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "Probability in Middle School"
+date = "June 2014"
+meeting = "Texas Regional Collaboratives 20th Annual Meeting"
+location = "Austin, TX"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "Data and You"
+date = "February 2014"
+meeting = "Mini-CAST (Conference for the Advancement of Science Teaching"
+location = "Dallas, TX"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "What do Mathematicians Do Anyway?"
+date = "June 2013"
+meeting = "Texas Regional Collaboratives 19th Annual Meeting"
+location = "Austin, TX"
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "WIP Physics Camp for Girls"
+date = "May 2013"
+meeting = "NSF Robert Noyce Teacher Scholarship Program Conference"
+location = "Washington D.C."
+isposter = true
+
+[[presentations]]
+authors = "Stuart, G.K."
+title = "iPads in the Mathematics Classroom"
+date = "January 2013"
+meeting = "Region VIII Educational Service Center"
+location = "Mt. Pleasant, TX"

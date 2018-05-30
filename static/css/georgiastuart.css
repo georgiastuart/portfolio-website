@@ -29,7 +29,7 @@
 }
 
 .cv-header {
-    border-bottom: 0.2rem dotted darkorange;
+    border-bottom: 0.05rem solid darkorange;
     /*border-top: 0.2rem solid darkorange;*/
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -37,4 +37,19 @@
 
 .cv-icon {
     text-align: right;
+}
+
+.cv-title {
+}
+
+.cv-journal {
+    font-variant: small-caps;
+}
+
+.cv-volume {
+    font-weight: bold;
+}
+
+.cv-meeting {
+    font-style: italic;
 }
