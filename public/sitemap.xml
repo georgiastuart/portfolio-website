@@ -8,23 +8,12 @@
   </url>
   
   <url>
-    <loc>http://georgiastuart.com/</loc>
-    <lastmod>2018-05-19T17:09:20-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://georgiastuart.com/posts/test-post/</loc>
-    <lastmod>2018-05-19T14:26:24-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://georgiastuart.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://georgiastuart.com/posts/</loc>
-    <lastmod>2018-05-19T14:26:24-05:00</lastmod>
+    <loc>http://georgiastuart.com/</loc>
     <priority>0</priority>
   </url>
   

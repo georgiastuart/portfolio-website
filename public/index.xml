@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Test Page on Georgia Stuart</title>
+    <title>Georgia Stuart</title>
     <link>http://georgiastuart.com/</link>
-    <description>Recent content in Test Page on Georgia Stuart</description>
+    <description>Recent content on Georgia Stuart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 May 2018 17:09:20 -0500</lastBuildDate>
     
 	<atom:link href="http://georgiastuart.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test Post</title>
-      <link>http://georgiastuart.com/posts/test-post/</link>
-      <pubDate>Sat, 19 May 2018 14:26:24 -0500</pubDate>
-      
-      <guid>http://georgiastuart.com/posts/test-post/</guid>
-      <description>Hello world</description>
-    </item>
     
   </channel>
 </rss>
