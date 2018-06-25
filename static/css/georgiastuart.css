@@ -53,3 +53,15 @@
 .cv-meeting {
     font-style: italic;
 }
+
+.summary {
+    margin-bottom: 2rem;
+}
+
+.summary-tag-container {
+    text-align: right;
+}
+
+.summary-title {
+
+}

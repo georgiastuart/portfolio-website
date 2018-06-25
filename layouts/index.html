@@ -1,131 +1,31 @@
 {{ define "main" }}
-<div id="name" class="row flex-md-center cv-header">
-    <h1>Georgia Stuart</h1>
-</div>
-
 <div class="row flex-md-center">
-    <div class="col-md-3">
+    <div class="col-md-8">
 
-        <div class="row">
-            <div class="container"><img src="/about/georgia.png" class="img-fluid radius-lg" alt="Georgia Stuart"></div>
-        </div>
-    </div>
-    <div class="col-md-9">
-        <div class="row">
-        {{ .Content }}
-        </div>
-        <div class="row">
-            <div class="col-1 cv-icon"><i class="fas fa-envelope"></i></div>
-            <div class="col-11 col-md-5"><a href="mailto:{{ $.Site.Params.email }}">{{ $.Site.Params.email }}</a></div>
-            <div class="col-1 cv-icon"><i class="fas fa-link"></i></div>
-            <div class="col-11 col-md-5"><a href="https://{{ $.Site.Params.website }}">{{ $.Site.Params.website }}</a></div>
-        </div>
-        <div class="row ">
-            <div class="col-1 cv-icon"><i class="fab fa-github"></i></div>
-            <div class="col-11 col-md-5"><a href="https://github.com/{{ $.Site.Params.github }}">{{ $.Site.Params.github }}</a></div>
-            <div class="col-1 cv-icon"><i class="fab fa-linkedin"></i></div>
-            <div class="col-11 col-md-5"><a href="https://www.linkedin.com/in/{{ $.Site.Params.linkedin }}">{{ $.Site.Params.linkedin }}</a></div>
-        </div>
-    </div>
-</div>
-<div id="cv" class="row flex-md-center cv-header">
-<h2>Curriculum Vitae</h2>
-</div>
-<!--<div class="row flex-md-center">-->
-
-    <!--<div class="col-md-9">-->
-    <!--<div data-cfw="scrollspy" data-cfw-scrollspy-target="#toc" data-cfw-scrollspy-offset="0">-->
-        <!--<h3 id="about">About</h3>-->
-
-        <h3 id="education">Education</h3>
-        {{ range $.Site.Data.about.cv.education }}
-        <div class="row cv-row">
-            <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-            <div class="col-md-9">
-                <span class="cv-degree">{{ .degree }}</span><br>
-                <span class="cv-institution">{{ .institution }}</span>, {{ .location }} <br>
-                <span class="cv-notes">{{ .notes }}</span>
-            </div>
-        </div>
-        {{ end }}
-        <h3 id="research">Research Experience</h3>
-        {{ range $.Site.Data.about.cv.research }}
-        <div class="row cv-row">
-            <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-            <div class="col-md-9">
-                <span class="cv-degree">{{ .title }}</span><br>
-                <span class="cv-institution">{{ .institution }}</span>, {{ .location }} <br>
-                {{ if .notes }}<span class="cv-notes">{{ .notes }}</span><br>{{ end }}
-                <span class="cv-notes"><span style="font-weight: bold">Topic:</span> {{ .topic }}</span>
-            </div>
-        </div>
-        {{ end }}
-        <h3 id="teaching">Teaching Experience</h3>
-        {{ range $.Site.Data.about.cv.teaching }}
-        <div class="row cv-row">
-            <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-            <div class="col-md-9">
-                <span class="cv-degree">{{ .title }}</span><br>
-                <span class="cv-institution">{{ .institution }}</span>, {{ .location }} <br>
-                {{ if .notes }}<span class="cv-notes">{{ .notes }}</span><br>{{ end }}
-                {{ if .courses}}
-                Courses Taught
-                <ul>
-                    {{ range .courses }}
-                    <li class="cv-list">{{ . }}</li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-            </div>
+        <!-- {{ .Content }} -->
+        {{ range first 2 (where .Site.Pages "Section" "posts")}}
+        <div class="summary">
+            <a href="{{ .URL }}">
+                <h4 class="summary-title">{{ .Title }}</h4>
+            </a>
+            <span class="summary-summary">
+                {{ .Summary }}
+            </span>
+            <br>
+            <a class="summary-read-more" href="{{ .URL }}">Read More</a>
+            <br>
+            <span class="summary-tag-container">
+            {{ range .Params.tags }}
+            <a class="summary-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+                </span>
         </div>
         {{ end }}
 
-<h3 id="publications">Publications</h3>
-{{ range $.Site.Data.about.cv.publications }}
-<div class="row cv-row">
-    <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-    <div class="col-md-9">
-        {{ .authors }}, {{ .date }}, <span class="cv-title">{{ .title }},</span> <span class="cv-journal">{{ .journal }}</span>:
-        pp. {{ .pages }}{{ if .inrevision }}, in revision {{ .date }}{{ end }}
-        <!--<span class="cv-degree">{{ .title }}</span><br>-->
-        <!--<span class="cv-institution">{{ .institution }}</span>, {{ .amount }}<br>-->
+    </div>
+
+    <div class="col-md-4">
+        <h5>Recent Posts</h5>
     </div>
 </div>
-{{ end }}
-
-<h3 id="presentations">Presentations</h3>
-{{ range $.Site.Data.about.cv.presentations }}
-<div class="row cv-row">
-    <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-    <div class="col-md-9">
-        {{ .authors }}, <span class="cv-presentation-title">"{{ .title }},"</span>
-        <span class="cv-meeting">{{ .meeting }}</span>{{ if .isposter }} [poster]{{ end }}
-    </div>
-</div>
-{{ end }}
-
-<h3 id="grants">Grants Received</h3>
-{{ range $.Site.Data.about.cv.grants }}
-<div class="row cv-row">
-    <div class="col-md-3 cv-date"><span class="cv-date"> {{ .date }}</span></div>
-    <div class="col-md-9">
-        <span class="cv-degree">{{ .title }}</span><br>
-        <span class="cv-institution">{{ .institution }}</span>, {{ .amount }}<br>
-    </div>
-</div>
-{{ end }}
-    <!--</div>-->
-<!--</div>-->
-<!--</div>-->
-{{ end }}
-
-{{ define "scripts" }}
-<!--<script>-->
-
-<!--$(document).ready(function () {-->
-<!--$('#name').CFW_Affix({-->
-<!--top: 120-->
-<!--})-->
-<!--})-->
-<!--</script>-->
 {{ end }}
